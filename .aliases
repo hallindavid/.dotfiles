@@ -1,0 +1,79 @@
+#Fast Open
+alias o="open ."
+
+# PhpStorm
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
+# VSCode
+alias code='open -a "/Applications/Visual Studio Code.app" "`pwd`"'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# IP addresses
+alias ip="curl https://diagnostic.opendns.com/myip ; echo"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Flush Directory Service cache
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+# Lock the screen
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+#Common Config Modifiers
+alias vapor="php vendor/bin/vapor"
+
+#Quick Routes
+alias larareps="cd ~/lararepos/"
+alias goreps="cd ~/go/src/"
+alias reps="cd ~/repos/"
+alias c='clear'
+alias ll="ls -lahF"
+
+#Laravel Specific Aliases
+alias art="php artisan"
+alias artmm="php artisan make:model"
+alias artml="php artisan make:livewire"
+alias artms="php artisan make:seeder"
+alias artmc="php artisan make:controller"
+alias artclr="php artisan cache:clear && php artisan config:clear && php artisan view:clear && php artisan route:clear"
+
+alias artmf="php artisan migrate:fresh"
+alias artmfs="php artisan migrate:fresh --seed"
+
+#NPM aliases
+alias nrd="npm run dev"
+alias nrw="npm run watch"
+alias nrwp="npm run watch-poll"
+alias nrh="npm run hot"
+alias nrp="npm run production"
+
+#Laravel Vapor
+alias vapor="php vendor/bin/vapor"
+
+#PHP Unit
+alias phpunit="php vendor/bin/phpunit"
+
+# opens sublime texts snippets source folder in sublime text
+alias sublsnippets="subl ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
+
+# Pest Call
+alias pest="./vendor/bin/pest"
+
+# Composer Alias so that I dont get the member alerts
+alias comp="php -d memory_limit=-1 /usr/local/bin/composer"
+
+#Git Specific Aliases
+alias gs="git status"
+alias gp="git push"
+alias greset='git reset --hard;git clean -df'
+
+
