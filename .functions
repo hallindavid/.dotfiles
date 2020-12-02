@@ -5,10 +5,10 @@ function weather() {
    city="$1"
 
    if [ -z "$city" ]; then
-      city="Peteroborough%20Ontario"
+      eval "curl http://wttr.in/peterborough%20ontario\?2n"
+   else
+      eval "curl http://wttr.in/${city}\?2n"
    fi
-
-   eval "curl http://wttr.in/${city}"
 }
 
 
