@@ -1,9 +1,6 @@
 #Fast Open
 alias o="open ."
 
-# PhpStorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-
 # VSCode
 alias code='open -a "/Applications/Visual Studio Code.app" "`pwd`"'
 
@@ -32,9 +29,6 @@ alias sudo='sudo '
 alias vapor="php vendor/bin/vapor"
 
 #Quick Routes
-alias larareps="cd ~/lararepos/"
-alias goreps="cd ~/go/src/"
-alias reps="cd ~/repos/"
 alias c='clear'
 alias ll="ls -lahF"
 
@@ -76,4 +70,5 @@ alias gs="git status"
 alias gp="git push"
 alias greset='git reset --hard;git clean -df'
 
+alias gfgp="git fetch && git pull"
 
