@@ -45,7 +45,7 @@ cp ~/.dotfiles/oh-my-zsh.sh ~/.oh-my-zsh/oh-my-zsh.sh
 
 this is your .oh-my-zsh configuration file - so you can change themes/settings in this file.
 
-## [ZSH-AUTOCOMPLETE](https://github.com/zsh-users/zsh-autosuggestions) - https://github.com/zsh-users/zsh-autosuggestions
+## [ZSH-AUTOSUGGESTIONS](https://github.com/zsh-users/zsh-autosuggestions) - https://github.com/zsh-users/zsh-autosuggestions
 
 This is a plugin I use for oh-my-zsh, it's pretty awesome - it allows for autocomplete.
 
