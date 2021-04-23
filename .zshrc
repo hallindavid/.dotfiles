@@ -28,16 +28,3 @@ source ~/.dotfiles/.exports
 source ~/.dotfiles/.aliases
 source ~/.dotfiles/.functions
 
-
-export GOPATH=$HOME/dev/go
-export PATH="/Users/dave/.composer/vendor/bin:$PATH"
-export PATH="/Users/dave/dev/bin:$PATH"
-export PATH="/Users/dave/dev/flutter-source/flutter/bin:$PATH"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-
-# tabtab - https://github.com/mklabs/tabtab
-# tabtab autocomplete with .zsh
-# uninstall by removing these lines
-# [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
-
-

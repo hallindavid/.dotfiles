@@ -13,3 +13,19 @@ export MANPAGER="less -X"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
+# GOPATH
+export GOPATH=$HOME/dev/go
+# COMPOSER Path
+export PATH="$PATH:~/.composer/vendor/bin"
+
+# General binary dumping ground
+export PATH="$PATH:~/dev/bin"
+
+# Flutter Bin
+export PATH="$PATH:~/dev/flutter-source/flutter/bin"
+
+# Mysql Command client client path
+export PATH="$PATH:/usr/local/opt/mysql-client/bin"
+
+# MacVIM
+export PATH="$PATH:/usr/local/opt/macvim/bin"
