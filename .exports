@@ -13,10 +13,9 @@ export MANPAGER="less -X"
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto"
+
 # GOPATH
 export GOPATH=$HOME/dev/go
-# COMPOSER Path
-export PATH="$PATH:~/.composer/vendor/bin"
 
 # General binary dumping ground
 export PATH="$PATH:~/dev/bin"
@@ -24,8 +23,32 @@ export PATH="$PATH:~/dev/bin"
 # Flutter Bin
 export PATH="$PATH:~/dev/flutter-source/flutter/bin"
 
-# Mysql Command client client path
-export PATH="$PATH:/usr/local/opt/mysql-client/bin"
+# COMPOSER
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
-# MacVIM
-export PATH="$PATH:/usr/local/opt/macvim/bin"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Homebrew Paths
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/sbin"
+
+# General Paths
+export PATH="$PATH:/usr/local/sbin"
+export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:/usr/sbin"
+export PATH="$PATH:/usr/bin"
+export PATH="$PATH:/sbin"
+export PATH="$PATH:/bin"
+export PATH="$PATH:/usr/games"
+export PATH="$PATH:/usr/local/games"
+export PATH="$PATH:/snap/bin"
+
+# GOLANG
+export PATH="$PATH:/usr/local/go/bin"
+
+# Nodejs
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

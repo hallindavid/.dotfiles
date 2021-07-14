@@ -71,4 +71,4 @@ alias gp="git push"
 alias greset='git reset --hard;git clean -df'
 
 alias gfgp="git fetch && git pull"
-
+alias sail='bash vendor/bin/sail'
